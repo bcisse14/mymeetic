@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meetic</title>
+        <link rel="stylesheet" type="text/css" href="style.css" defer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+        <script src="../controllers/connexion.js" defer></script>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="meetic.html">Accueil</a></li>
+                <li><a href="Inscription.html">Pas encore inscrit ? Inscription</a></li>
+            </ul>
+        </nav>
+
+        <h1>Se Connecter</h1>
+
+        <form>
+            <div class="form_connexion">
+                <label>Mail :</label>
+            </div>
+            <div class="form_connexion">
+                <input type="email" name="email" class="email" required >
+            </div>
+            <div class="form_connexion">
+                <label>Mot de passe : </label>
+            </div>
+            <div class="form_connexion">
+                <input type="password" name="mdp" class="mdp" required >
+            </div>
+            <div class="message"></div>
+                <div class="button-63">
+                <input type="submit" id="connectbtn" value="Se connecter" class="button-63" />
+            </div>
+        </form>
+    </body>
+</html>

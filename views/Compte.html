@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetic</title>
+    <link rel="stylesheet" type="text/css" href="style.css" defer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" defer></script>
+    <script src="../controllers/navbar.js" defer></script>  
+    <script src="../controllers/compte.js" defer></script>  
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="meetic.html"> Accueil</a></li>
+        <li><a href="#">Plus</a>
+            <ul>
+                <li><a href="Search.html">Recherche de match</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <h1>Mon compte</h1>
+
+
+    <div class="Infos">
+        <div class="name"></div>
+        <div class="prenom"></div>
+        <div class="mail">Mail :</div>
+        <div class="Loisirs">Loisirs : </div>
+        <div class="Genre">Genre :</div>
+        <div class="ddn">Date de naissance : </div>
+        <div class="Ville">Ville : </div>
+        <div class="mdp">Mot de passe :</div>
+        <form action="../controllers/compte.php" method="post">
+            <h2>Changer de mot de passe :</h2>
+            <div class="button-63">
+                Entrer le nouveau mot de passe :
+                <input type="new_password" name="new_password" class="new_password" placeholder="Nouveau Mot de Passe">
+                <input type="submit" value="Confirmer" class="button-63"></div>
+        </form>
+        <form action="../controllers/compte.php" method="post">
+            <h2>Changer d'adresse mail :</h2>
+            <div class="button-63">
+                Entrer la nouvelle adresse mail :
+                <input type="new_email" name="new_email" class="new_email" placeholder="Nouvel email">
+                <input type="submit" value="Confirmer" class="button-63">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

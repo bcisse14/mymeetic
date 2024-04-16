@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetic</title>
+    <link rel="stylesheet" type="text/css" href="style.css" defer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" defer></script>
+    <script src="../controllers/redirect.js" defer></script>
+    <script src="../controllers/navbar.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="meetic.html">Accueil</a></li>
+            <li><a href="Connexion.html">Déjà inscrit ? Connexion</a></li>
+        </ul>
+    </nav>
+    <h1>S'inscrire</h1>
+    <form action="../controllers/inscription.php" method="post" class="ajax">
+        <div class="form_inscription">
+            <label>Prénom : </label>
+        </div>
+        <input type="text" name="prenom" id="prenom" required>
+        <div class="form_inscription">
+            <label>Nom : </label>
+        </div>
+        <div class="form_inscription">
+            <input type="text" name="nom" id="nom" required>
+        </div>
+        <div class="form_inscription">
+            <label>Mail :</label>
+        </div>
+        <div class="form_inscription">
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form_inscription">
+            <label>Date de naissance :</label>
+        </div>
+        <div class="form_inscription">
+            <input type="date" name="date_de_naissance" id="date_de_naissance" required>
+        </div>
+        <div class="form_inscription">
+            <label>Genre :</label>
+        </div>
+        <div class="form_inscription">
+            <select name="genre" id="pet-select" required>
+                <option value="">Choisir un genre</option>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+                <option value="Autre">Autre</option>
+            </select>
+        </div>
+        <div class="form_inscription">
+            <label>Ville : </label>
+        </div>
+        <div class="form_inscription">
+            <input type="text" name="ville" id="ville" required>
+        </div>
+        <div class="form_inscription">
+            <label>Mot de passe : </label>
+        </div>
+        <div class="form_inscription">
+            <input type="password" name="mdp" id="mdp" required>
+        </div>
+        <div class="form_inscription">
+            <label>Loisirs : </label>
+        </div>
+        <div class="loisirs">
+            <input type="text" name="loisir" id="loisir" required>
+        </div>
+        <div class="button-63">
+            <input type="submit" id="submitButton" value="S'Inscrire" class="button-63"/>
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>

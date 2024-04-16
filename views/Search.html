@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetic</title>
+    <link rel="stylesheet" type="text/css" href="style.css" defer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" defer></script>
+    <script src="../controllers/navbar.js" defer></script>  
+    <script src="../controllers/search.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="meetic.html"> Accueil</a></li>
+            <li><a href="#">Plus</a>
+                <ul>
+                    <li><a href="Compte.html">Mon compte</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    <h1>Recherchez selon vos critères l'ami qu'il vous faut</h1>
+    <h4>Sexe de la personne recherchée :</h4>
+    <div class="form_Sexe">
+        <form action="../controllers/search.php" class="form1" method="post">
+            <div>
+                <input type="checkbox" name="Sexe">
+                <label for="Sexe">Homme</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Sexe">
+                <label for="Sexe">Femme</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Sexe">
+                <label for="Sexe">Autre</label>
+            </div>
+        </form>
+    </div>
+    <h4>Ville :</h4>
+
+    <div class="form_Loisirs">
+        <form action="../controllers/search.php" class="form3" method="post">
+            <div>
+                <input type="checkbox" name="Ville">
+                <label for="Ville">Paris</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Ville">
+                <label for="Ville">Lyon</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Ville">
+                <label for="Ville">Marseille</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Ville">
+                <label for="Ville">Vitry-Sur-Seine</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Ville">
+                <label for="Ville">Nice</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Ville">
+                <label for="Ville">Lille</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Ville">
+                <label for="Ville">Angers</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Ville">
+                <label for="Ville">Montpellier</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Ville">
+                <label for="Ville">Strasbourg</label>
+            </div>
+        </form>
+    </div>
+    <h4>Loisirs de la personne recherchée :</h4>
+    <div class="form_Loisirs">
+    <form  class="form2" method="post">
+        <div>
+            <input type="checkbox" name="Loisirs" value="Football²">
+            <label for="Loisirs">Football</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Loisirs" value="Mangas">
+            <label for="Loisirs">Mangas</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Loisirs" value="Hockey Sur Glace">
+            <label for="Loisirs">Hockey Sur Glace</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Loisirs" value="Séries">
+            <label for="Loisirs">Séries</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Loisirs" value="Cinéma">
+            <label for="Loisirs">Cinéma</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Loisirs" value="Skateboard">
+            <label for="Loisirs">Skateboard</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Loisirs" value="Jeux Vidéos">
+            <label for="Loisirs">Jeux Vidéos</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Loisirs" value="Basketball">
+            <label for="Loisirs">Basketball</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Loisirs" value="MMA">
+            <label for="Loisirs">MMA</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Loisirs" value="Skateboard">
+            <label for="Loisirs">Voyages</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Loisirs" value="Equitation">
+            <label for="Loisirs">Equitation</label>
+        </div> 
+        <div>
+            <input type="checkbox" name="Loisirs" value="Natation">
+            <label for="Loisirs">Natation</label>
+        </div>
+        <div><input type="submit" value="Rechercher" class="button-63" ></div>
+    </form>
+        <div>
+            <h4>Tranche d'age :</h4>
+
+            <form action="../controllers/search.php" class="form4" method="post">
+                <div>
+                    <input type="checkbox" name="Age">
+                    <label for="Age">18/25</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Age">
+                    <label for="Age">25/35</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Age">
+                    <label for="Age">35/45</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Age">
+                    <label for="Age">45+</label>
+                </div>
+                
+                
+            </form>
+        </div>     
+    </div>
+    <div class="Infos">
+        <div class="nom"></div>
+        <div class="prénom"></div>
+        <div class="email"></div>
+        <div class="loisir"></div>
+        <div class="genre"></div>
+        <div class="date_de_naissance"></div>
+        <div class="ville"></div>
+    </div>
+    
+
+    
+
+
+    
+</body>
+</html>
